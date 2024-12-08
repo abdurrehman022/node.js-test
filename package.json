@@ -1,0 +1,36 @@
+{
+  "name": "nodejs-test",
+  "version": "1.0.0",
+  "main": "callback-server.js",
+  "scripts": {
+    "start": "node start.js",
+    "dev:callback": "nodemon callback-server.js",
+    "dev:async": "nodemon async-server.js",
+    "dev:promises": "nodemon promises-server.js",
+    "dev:streams": "nodemon streams-server.js",
+    "prod:callback": "node callback-server.js",
+    "prod:async": "node async-server.js",
+    "prod:promises": "node promises-server.js",
+    "prod:streams": "node streams-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "server",
+    "async",
+    "streams",
+    "promises"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "Node.js server implementations using different programming patterns",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "async": "^3.2.6",
+    "dotenv": "^16.4.7",
+    "rsvp": "^4.8.5",
+    "rxjs": "^7.8.1"
+  }
+}
